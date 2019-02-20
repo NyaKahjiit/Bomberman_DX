@@ -60,8 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Resources\GameStart.cs" />
-    <Compile Include="Assets\Resources\LObject.cs" />
+    <Compile Include="Assets\Prefabs\Resources\GameStart.cs" />
+    <Compile Include="Assets\Prefabs\Resources\GameZone\InitZone.cs" />
+    <Compile Include="Assets\Prefabs\Resources\LObject.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Kahjiit/Documents/Bomberman_DX/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
