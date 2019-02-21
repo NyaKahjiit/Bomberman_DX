@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameStart : MonoBehaviour
 {
-    public int x_count = 11;
-    public int y_count = 11;
+    public int x_count = 17;
+    public int y_count = 17;
     void Start()
     {
         InitZone zo = new InitZone();

@@ -13,7 +13,6 @@ public class InitZone : MonoBehaviour
         float zx = 0, zy = 0, x_field=0, y_field=0;
         for (int i = 0; i < size.x_count ; i++)
         {
-            zx += 0.2f;
             zy = 0;
             for (int j = 0; j < size.y_count; j++)
             {
@@ -21,16 +20,17 @@ public class InitZone : MonoBehaviour
                 {
                     Instantiate(WallBlock, new Vector3(i+zx, 0.5f, j+zy), Quaternion.identity);
                 }
-                zy += 0.2f;
                 if (i == size.x_count - 1 & j == size.y_count - 1)
                 {
                     x_field = (i + zx);
                     y_field = (j + zy);
                 }
+                zy += 0.2f;
             }
+            zx += 0.2f;
         }
-        GameObject newObject = Instantiate(Field, new Vector3(x_field/2 , 0, y_field/2), Quaternion.identity) as GameObject;
-        newObject.transform.localScale = new Vector3(x_field/10 , 1, y_field/10);
+        GameObject newObject = Instantiate(Field, new Vector3((x_field)/2 , 0, (y_field)/2), Quaternion.identity) as GameObject;
+        newObject.transform.localScale = new Vector3((x_field+1)/10 , 1, (y_field+1) / 10);
         Debug.Log(size.x_count);
     }
 
