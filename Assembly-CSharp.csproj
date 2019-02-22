@@ -60,11 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Prefabs\Resources\GameStart.cs" />
-    <Compile Include="Assets\Prefabs\Resources\GameZone\InitZone.cs" />
-    <Compile Include="Assets\Prefabs\Resources\LObject.cs" />
-    <Compile Include="Assets\Prefabs\Resources\Menu\GameParam.cs" />
-    <Compile Include="Assets\Prefabs\Resources\Menu\menucontrols.cs" />
+    <Compile Include="Assets\Prefabs\Resources\GameLoc\GameStart.cs" />
+    <Compile Include="Assets\Prefabs\Resources\GameLoc\GameZone\InitZone.cs" />
+    <Compile Include="Assets\Prefabs\Resources\GameLoc\LObject.cs" />
+    <Compile Include="Assets\Prefabs\Resources\GameLoc\MenuPause.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Menu\Configuration.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Menu\Menucontrols.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
