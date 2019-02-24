@@ -419,8 +419,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1996421529}
-  - component: {fileID: 1996421530}
   - component: {fileID: 1996421531}
+  - component: {fileID: 1996421532}
   m_Layer: 0
   m_Name: Louncher
   m_TagString: Untagged
@@ -443,20 +443,6 @@ Transform:
   m_Father: {fileID: 534669905}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1996421530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996421528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1412e6f248ee70b488e2c0efe1011940, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x_count: 11
-  y_count: 11
 --- !u!114 &1996421531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,3 +458,22 @@ MonoBehaviour:
   timer: 0
   ispuse: 0
   guipuse: 0
+--- !u!114 &1996421532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996421528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d14445c7fb204b4f8883f738beed3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpaceBlock: 0
+  Playerobj: {fileID: 6118252628236965831, guid: 7c4102e850504a84cbe9e6b173e6191f,
+    type: 3}
+  Field: {fileID: 311884604012470961, guid: a198b04393f480a498a81819eac73525, type: 3}
+  WallBlock: {fileID: 3238354372251894486, guid: e47108ba51bb9b64287fd8fdd3713b55,
+    type: 3}
+  Bomb: {fileID: 7361706186159610868, guid: 650f5d7cb6a166e43827fddc6aa45eff, type: 3}

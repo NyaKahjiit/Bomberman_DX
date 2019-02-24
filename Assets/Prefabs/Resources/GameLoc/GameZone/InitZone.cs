@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class InitZone : MonoBehaviour
 {
+    public float SpaceBlock;
+    public GameObject Playerobj;
+    public GameObject Field;
+    public GameObject WallBlock;
+    public static GameObject Bomb;
     public void Start()
     {
-        LObject.LZone go = new LObject.LZone();
         int X_count = PlayerPrefs.GetInt("X_count");
         int Y_count = PlayerPrefs.GetInt("Y_count");
-        GameObject Field = go.LField();
-        GameObject WallBlock = go.LWall();
+        Debug.Log("Your setting for field(Cubes): x="+ X_count+", y="+Y_count);
         float zx = 0, zy = 0, x_field=0, y_field=0;
         for (int i = 0; i < X_count ; i++)
         {
@@ -26,13 +29,13 @@ public class InitZone : MonoBehaviour
                     x_field = (i + zx);
                     y_field = (j + zy);
                 }
-                zy += 0.2f;
+                zy += SpaceBlock;
             }
-            zx += 0.2f;
+            zx += SpaceBlock;
         }
         GameObject newObject = Instantiate(Field, new Vector3((x_field)/2 , 0, (y_field)/2), Quaternion.identity) as GameObject;
         newObject.transform.localScale = new Vector3((x_field+1)/10 , 1, (y_field+1) / 10);
-        Debug.Log(X_count);
+        Instantiate(Playerobj , new Vector3(1, 0.5f, 1), Quaternion.identity);
     }
 
 }

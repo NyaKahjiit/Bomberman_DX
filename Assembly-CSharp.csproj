@@ -60,10 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Prefabs\Resources\GameLoc\GameStart.cs" />
+    <Compile Include="Assets\Prefabs\Resources\GameLoc\Bomb\BombController.cs" />
     <Compile Include="Assets\Prefabs\Resources\GameLoc\GameZone\InitZone.cs" />
     <Compile Include="Assets\Prefabs\Resources\GameLoc\LObject.cs" />
     <Compile Include="Assets\Prefabs\Resources\GameLoc\MenuPause.cs" />
+    <Compile Include="Assets\Prefabs\Resources\GameLoc\Player\PlayerController.cs" />
     <Compile Include="Assets\Prefabs\Resources\Menu\Configuration.cs" />
     <Compile Include="Assets\Prefabs\Resources\Menu\Menucontrols.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

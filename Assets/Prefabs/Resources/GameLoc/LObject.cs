@@ -16,5 +16,6 @@ public class LObject : MonoBehaviour
             GameObject wall = Resources.Load("GameLoc/GameZone/Wall/Cube") as GameObject;
             return wall;
         }
+
     }
 }
