@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             PlannedBomb();
-            BombController.Update();
         }
     }
     void PlannedBomb()

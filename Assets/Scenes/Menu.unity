@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1373200744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 323a42bc5eaaac14cb2d2f671b61a66d, type: 3}
+  m_Script: {fileID: 11500000, guid: 96169c0600df4eb4298c348b6c6ca3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1412901092
@@ -2236,12 +2236,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1373200746}
-        m_MethodName: PresstoPlay
+      - m_Target: {fileID: 11500000, guid: 96169c0600df4eb4298c348b6c6ca3b4, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1373200746}
+      - m_Target: {fileID: 0}
         m_MethodName: ExitGamePressed
         m_Mode: 1
         m_Arguments:
