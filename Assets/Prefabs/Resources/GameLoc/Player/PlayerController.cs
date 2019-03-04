@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         playvec = new Vector3 (Input.GetAxis("Horizontal")*speed, 0, Input.GetAxis("Vertical")* speed);
+        transform.LookAt(playvec+transform.position);
         this.GetComponent<Rigidbody>().velocity = playvec;
         if (Input.GetKeyDown("space"))
         {
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     void PlannedBomb()
     {
         Vector3 Planned = this.GetComponent<Transform>().position;
+
         Planned.x = Mathf.Round(Planned.x);
         Planned.z = Mathf.Round(Planned.z);
         if (BombsList.Contains(Planned) | BombsList.Count>=limBombs)
