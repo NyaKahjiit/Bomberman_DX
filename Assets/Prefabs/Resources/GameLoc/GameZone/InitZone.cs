@@ -5,25 +5,21 @@ using UnityEngine;
 public class InitZone : MonoBehaviour
 {
     List<Vector3> EmptyXYMass = new List<Vector3>();
-    public float SpaceBlock;
-    public GameObject Playerobj;
-    public GameObject Field;
-    public GameObject WallBlock;
-    public GameObject Box;
-    public static GameObject Bomb;
-    public GameObject Err;
-    public int chancecreatebox;
-    public int emptyCellForPlayer;
+    public static float SpaceBlock;
+    public GameObject Playerobj, Field, WallBlock, Box, Err;
+    public int chancecreatebox, emptyCellForPlayer;
+    private int X_count, Y_count;
     public void Start()
     {
+        X_count = PlayerPrefs.GetInt("X_count");
+        Y_count = PlayerPrefs.GetInt("Y_count");
+        SpaceBlock = PlayerPrefs.GetFloat("distanceBetweenBlocks");
         GeneratedStaticObj();
         GeneratedDynamicObj();
     }
     void GeneratedStaticObj()
     {
         Vector3 EmptyXY = new Vector3();
-        int X_count = PlayerPrefs.GetInt("X_count");
-        int Y_count = PlayerPrefs.GetInt("Y_count");
         Debug.Log("Your setting for field(Cubes): x=" + X_count + ", y=" + Y_count);
         float x_field = 0, y_field = 0;
         GeneratedWalls(ref EmptyXY, X_count, Y_count, ref x_field, ref y_field);

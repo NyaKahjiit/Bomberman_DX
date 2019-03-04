@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class BombController : MonoBehaviour
 {
-    public static float timer;
+    public int exploooooosionDelay;
+    private Vector3 myCoordinate;
     private void Start()
     {
+        myCoordinate = this.gameObject.GetComponent<Transform>().position;
         StartCoroutine(Example());
     }
 
@@ -16,9 +18,8 @@ public class BombController : MonoBehaviour
     }
     IEnumerator Example()
     {
-        print(Time.time);
-        yield return new WaitForSeconds(5);
-        print(Time.time);
+        yield return new WaitForSeconds(exploooooosionDelay);
+        PlayerController.BombsList.Remove(myCoordinate);
         Destroy(this.gameObject);
     }
 }
