@@ -74,7 +74,6 @@ public class InitZone : MonoBehaviour
                 if (IsNeibhourCell(XY_neiqhbour, vec))
                 {
                     playerneiqhbour.Add(vec);
-                    Debug.Log(vec);
                 }
             }
             XY_neiqhbour = playerneiqhbour[Random.Range(0, playerneiqhbour.Count)];

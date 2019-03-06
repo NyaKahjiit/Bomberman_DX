@@ -60,13 +60,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Prefabs\Resources\GameLoc\Bomb\BombController.cs" />
-    <Compile Include="Assets\Prefabs\Resources\GameLoc\GameZone\InitZone.cs" />
-    <Compile Include="Assets\Prefabs\Resources\GameLoc\LObject.cs" />
-    <Compile Include="Assets\Prefabs\Resources\GameLoc\MenuPause.cs" />
-    <Compile Include="Assets\Prefabs\Resources\GameLoc\Player\CameraController.cs" />
-    <Compile Include="Assets\Prefabs\Resources\GameLoc\Player\CoroutineController.cs" />
-    <Compile Include="Assets\Prefabs\Resources\GameLoc\Player\PlayerController.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\Bomb\BombController.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\GameZone\Box\Trigger.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\GameZone\InitZone.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\LObject.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\MenuPause.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\Player\CameraController.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\Player\CoroutineController.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\Player\CreateBomb.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\Player\RigidbodyWalk.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\Player\TriggerDamage.cs" />
+    <Compile Include="Assets\Prefabs\Resources\Game\TrigTrig.cs" />
     <Compile Include="Assets\Prefabs\Resources\Menu\Configuration.cs" />
     <Compile Include="Assets\Prefabs\Resources\Menu\MainMen.cs" />
     <Compile Include="Assets\Prefabs\Resources\Menu\menucontrols.cs" />

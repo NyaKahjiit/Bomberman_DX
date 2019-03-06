@@ -90,4 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5eb5412809b0e448a98c7f28caba604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exploooooosionDelay: 5
+  trigger: {fileID: 8444847676584232592, guid: 446d9a3aa9edfa345a76289c1b64b21f, type: 3}
+  explosionDistance: 2
+  explosionDelay: 3

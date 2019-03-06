@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2711252105937989865}
   - component: {fileID: 5190772957061852811}
   - component: {fileID: 3619757016634678}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,10 +103,11 @@ GameObject:
   - component: {fileID: 1846405468569794134}
   - component: {fileID: 5771138410387725872}
   - component: {fileID: 5783183782298611994}
-  - component: {fileID: 2537711480422162354}
   - component: {fileID: 5054804805746129904}
   - component: {fileID: 3060963725473406345}
-  m_Layer: 0
+  - component: {fileID: 8749214959541398848}
+  - component: {fileID: 8752781853928409845}
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,21 +188,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2537711480422162354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7523568545224697237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0802ae7677858c044b12590a3fd8be8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bomb: {fileID: 7361706186159610868, guid: 650f5d7cb6a166e43827fddc6aa45eff, type: 3}
-  speed: 5
-  limBombs: 2
 --- !u!54 &5054804805746129904
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -216,7 +202,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &3060963725473406345
 MonoBehaviour:
@@ -231,3 +217,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseWhellSpeed: 1.5
+--- !u!114 &8749214959541398848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523568545224697237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518418a5a437d964eb336359e06b7afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bomb: {fileID: 7361706186159610868, guid: 650f5d7cb6a166e43827fddc6aa45eff, type: 3}
+  limBombs: 2
+--- !u!114 &8752781853928409845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523568545224697237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd105f1740d6d742b3a2374ac372b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 0.5
