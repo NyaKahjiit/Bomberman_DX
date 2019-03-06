@@ -50,8 +50,8 @@ public List<Vector3> Main(Vector3 myCoordinate)
             {
                 Vector3 coordinateHit = hit.transform.position;
                 coordinateHit -= myCoordinate;
-                //coordinateHit.x = Mathf.Round(coordinateHit.x);
-                //coordinateHit.z = Mathf.Round(coordinateHit.z);
+                coordinateHit.x = Mathf.Round(coordinateHit.x);
+                coordinateHit.z = Mathf.Round(coordinateHit.z);
                 coordinateHit.y = 0;
                 hitList.Add(coordinateHit);
                 Debug.Log("Hit= " + coordinateHit);

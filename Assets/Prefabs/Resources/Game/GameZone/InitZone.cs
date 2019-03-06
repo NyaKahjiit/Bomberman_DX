@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class InitZone : MonoBehaviour
 {
-    List<Vector3> EmptyXYMass = new List<Vector3>();
+    public static List<Vector3> EmptyXYMass = new List<Vector3>();
     public static float SpaceBlock;
-    public GameObject Playerobj, Field, WallBlock, Box, Err;
-    public int chancecreatebox, emptyCellForPlayer;
+    public GameObject Playerobj, Field, WallBlock, Box, Err, Enemy;
+    public int percentBlock, emptyCellForPlayer;
     private int X_count, Y_count;
     public void Start()
     {
@@ -80,17 +80,21 @@ public class InitZone : MonoBehaviour
             EmptyXYMass.Remove(XY_neiqhbour);
             playerneiqhbour.Clear();
         }
-        for (int i = 0; i <= EmptyXYMass.Count - 1; i++)
+        int indexEmptyCellForEnemy = Random.Range(0, EmptyXYMass.Count - 1);
+        Vector3 coordinateEnemy = EmptyXYMass[indexEmptyCellForEnemy];
+        Instantiate(Enemy, coordinateEnemy, Quaternion.identity);
+        EmptyXYMass.RemoveAt(indexEmptyCellForEnemy);
+        for (int i = 0; i <= EmptyXYMass.Count/100*percentBlock; i++)
         {
-            if (Random.Range(0, 100) <= chancecreatebox)
-            {
-                Instantiate(Box, EmptyXYMass[i], Quaternion.identity);
-            }
+            Vector3 coordinateBlock = EmptyXYMass[Random.Range(0, EmptyXYMass.Count - 1)];
+            Instantiate(Box, coordinateBlock, Quaternion.identity);
+            EmptyXYMass.Remove(coordinateBlock);
         }
+        EmptyXYMass.Add(coordinateEnemy);
         Debug.Log("player created on = " + playerpos);
     }
 
-    private bool IsNeibhourCell(Vector3 XY_neiqhbour, Vector3 vec)
+    public static bool IsNeibhourCell(Vector3 XY_neiqhbour, Vector3 vec)
     {
         return (vec == XY_neiqhbour + new Vector3(1 + SpaceBlock, 0, 0)) | (vec == XY_neiqhbour - new Vector3(1 + SpaceBlock, 0, 0))
                | (vec == XY_neiqhbour + new Vector3(0, 0, 1 + SpaceBlock)) | (vec == XY_neiqhbour - new Vector3(0, 0, 1 + SpaceBlock));

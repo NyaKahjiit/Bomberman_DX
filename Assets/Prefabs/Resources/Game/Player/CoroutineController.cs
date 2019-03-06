@@ -18,7 +18,7 @@ public class CoroutineController : MonoBehaviour
     ////////////////////////////////////////////////////////
     IEnumerator Example()
     {
-        const float deltaSpeedConst = 0.1f;
+        const float deltaSpeedConst = 0.01f;
         float delta;
         isCoroutine = true;
         if (Input.GetAxis("Horizontal") != 0 | Input.GetAxis("Vertical") != 0)

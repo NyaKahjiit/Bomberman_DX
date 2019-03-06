@@ -17,10 +17,10 @@ public class CreateBomb : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            PlannedBomb();
+            PlanBomb();
         }
     }
-    void PlannedBomb()
+    void PlanBomb()
     {
         Planned = this.GetComponent<Transform>().position;
         Planned.x = Mathf.Round(Planned.x);
