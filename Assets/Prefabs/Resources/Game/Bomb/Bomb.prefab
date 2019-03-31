@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 6410103956055322861}
   - component: {fileID: 3832572243202771989}
   - component: {fileID: 3994167881720056580}
-  - component: {fileID: 5177149306212994545}
+  - component: {fileID: 6466356779446753485}
   m_Layer: 0
   m_Name: Bomb
-  m_TagString: Untagged
+  m_TagString: Bomd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &5177149306212994545
+--- !u!114 &6466356779446753485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,10 +87,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7361706186159610868}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5eb5412809b0e448a98c7f28caba604, type: 3}
+  m_Script: {fileID: 11500000, guid: 92372f0687a4dd74ab55e501ac5543be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCoordinate: {x: 0, y: 0, z: 0}
-  trigger: {fileID: 8444847676584232592, guid: 446d9a3aa9edfa345a76289c1b64b21f, type: 3}
-  explosionDistance: 3
-  explosionDelay: 3
+  delay: 2
+  audExplosion: {fileID: 8313062843666388929, guid: df07b6ed498c0bb4a8ff1db73819af57,
+    type: 3}
+  trig: {fileID: 8444847676584232592, guid: 446d9a3aa9edfa345a76289c1b64b21f, type: 3}
+  partSys: {fileID: 4073760069019869660, guid: 1a5cdb1e2afef6b4d9bb14b56050adf8, type: 3}
